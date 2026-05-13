@@ -17,8 +17,8 @@ $data = array(
     "address_street"=>$street,
     "address_lat"=>$lat,
     "address_long"=>$long
-)
+);
 
-insertData($table, $data)
+insertData($table, $data);
 
 ?>

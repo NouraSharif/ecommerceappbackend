@@ -3,9 +3,7 @@ include "../connect.php";
 
 $table ="address";
 
-$addressid =filterRequest("addressid")
-
-
+$addressid =filterRequest("addressid");
 deleteData($table, "address_id =$addressid");
 
 ?>
