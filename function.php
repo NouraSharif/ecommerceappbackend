@@ -68,8 +68,9 @@ function insertData($table, $data, $json = true)
         echo json_encode(array("status" => "failure"));
     }
   }
-    
+  return $count;
 }
+
 function deleteData($table, $where, $json = true)
 {
     global $con;

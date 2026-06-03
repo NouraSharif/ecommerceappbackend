@@ -36,4 +36,5 @@ INNER JOIN items ON favorite.favorite_itemsid=items.items_id
 CREATE OR REPLACE VIEW cartview AS
 SELECT SUM(items_price) AS itemsprice,COUNT(cart_itemsid) AS countitems,cart.*,items.* FROM cart
 INNER JOIN items ON items_id=cart_itemsid
+WHERE cart.cart_orders =0
 GROUP BY cart_itemsid,cart_usersid
